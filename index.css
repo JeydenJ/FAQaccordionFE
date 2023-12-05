@@ -1,0 +1,94 @@
+@font-face {
+    font-family: 'WorkSans-Bold';
+    font-weight: 400;
+    src: url('./assets/fonts/static/WorkSans-Bold.ttf');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'WorkSans-Regular';
+    font-weight: 600;
+    font-size: 16px;
+    src: url('./assets/fonts/static/WorkSans-Regular.ttf');
+    font-display: swap;
+}
+@font-face {
+    font-family: 'WorkSans-SemiBold';
+    font-weight: 700;
+    font-size: 16px;
+    src: url('./assets/fonts/static/WorkSans-SemiBold.ttf');
+    font-display: swap;
+}
+
+
+:root{
+--WorkSans-Bold: 'WorkSans-Bold';
+--WorkSans-Regular: 'WorkSans-Regular';
+--WorkSans-SemiBold: 'WorkSans-SemiBold';
+--White: hsl(0, 0%, 100%);
+--Light-pink: hsl(275, 100%, 97%);
+--Grayish-purple: hsl(292, 16%, 49%);
+--Dark-purple: hsl(292, 42%, 14%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+.container {
+    display: flex;
+    justify-content: center;
+    flex-direction: column; 
+    border-radius: 1rem;
+    background-color: var(--White);
+    padding: 20px; 
+    max-width: 1000px; 
+    margin: 150px auto; 
+}
+.title-container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+.question-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    border-top: 2px solid var(--Light-pink);
+}
+.hidden{
+   display: none;
+}
+img{
+    width: 40px;
+    height: 59px;
+    display: block;
+}
+body{
+    background-color: var(--Light-pink)
+}
+h1{
+    
+    font-family: var(--WorkSans-Bold);
+    font-size: 50px;
+    padding-left: 20px;
+        
+    
+}
+
+h2{
+    color: var(--Dark-purple);
+    margin: 50px 20px 20px 20px;
+    font-family: var(--WorkSans-SemiBold);
+    
+}
+
+p{
+    color: var(--Grayish-purple);
+    font-family: var(--WorkSans-Regular);
+}
+#plus-icon{
+    margin-top: 35px;
+}
